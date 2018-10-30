@@ -8,7 +8,9 @@
     <ImageView
         android:id="@+id/iv_item_menu"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="@dimen/_30sdp"
         android:layout_margin="10dp"
-        app:srcCompat="@drawable/menu001" />
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp"
+        app:srcCompat="@drawable/menu01" />
 </LinearLayout>

@@ -194,10 +194,11 @@ public class MainActivity extends AppCompatActivity {
         btnYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //ngambil data
-                finish();
-                System.exit(0);
                 playSound();
+                MainActivity.this.stopService(new Intent(MainActivity.this, BackSoundService.class));                finishAffinity();
+                System.exit(0);
+
+
             }
         });
 
@@ -205,10 +206,8 @@ public class MainActivity extends AppCompatActivity {
         btnNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //ngambil data
                 dialog.dismiss();
                 playSound();
-                MainActivity.this.stopService(new Intent(MainActivity.this, BackSoundService.class));
 
             }
         });

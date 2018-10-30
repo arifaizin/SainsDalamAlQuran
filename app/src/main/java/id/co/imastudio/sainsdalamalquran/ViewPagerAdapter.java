@@ -1,7 +1,6 @@
 package id.co.imastudio.sainsdalamalquran;
 
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,22 +61,22 @@ public class ViewPagerAdapter extends PagerAdapter {
 ////        ivText.setImageResource(textAdab[position]);
 //
 //        Glide.with(context).load(textAdab[position]).into(ivText);
-        rowview.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MediaPlayer player = MediaPlayer.create(context, suarabilal[position]);
-//                player.start();
-
-                if(kondisi == "lanjut"){
-                    player.stop();
-                    kondisi = "berhenti";
-                } else {
-                    player.start();
-                    kondisi = "lanjut";
-                }
-
-            }
-        });
+//        rowview.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                MediaPlayer player = MediaPlayer.create(context, suarabilal[position]);
+////                player.start();
+//
+//                if(kondisi == "lanjut"){
+//                    player.stop();
+//                    kondisi = "berhenti";
+//                } else {
+//                    player.start();
+//                    kondisi = "lanjut";
+//                }
+//
+//            }
+//        });
 
         //tambahkan view
         container.addView(rowview);

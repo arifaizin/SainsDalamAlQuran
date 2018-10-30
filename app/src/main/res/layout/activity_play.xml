@@ -22,14 +22,13 @@
 
             <ImageView
                 android:id="@+id/btnPlayRestart"
-                android:layout_width="@dimen/_30sdp"
+                android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
                 app:srcCompat="@drawable/notif_finish_restart" />
 
             <ImageView
@@ -52,7 +51,7 @@
 
             <ImageView
                 android:id="@+id/btnPlayHome"
-                android:layout_width="@dimen/_30sdp"
+                android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_alignStart="@+id/btnPlayBack"
                 android:layout_alignLeft="@+id/btnPlayBack"

@@ -25,7 +25,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="id.co.imastudio.sainsdalamalquran.MenuActivity" android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="id.co.imastudio.sainsdalamalquran.MenuActivity"
+            android:screenOrientation="landscape" />
+
+        <service
+            android:name="id.co.imastudio.sainsdalamalquran.BackSoundService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
